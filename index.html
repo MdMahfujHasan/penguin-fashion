@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        title: '#363958',
+                        price: '#FABE4C',
+                        description: '#3E3E3E',
+                    },
+                    backgroundColor: {
+                        imgBg: '#F1F1F1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0]">
+        <nav class="flex justify-around pt-8">
+            <div>
+                <img class="h-10 w-72" src="images/logo.png" alt="Logo">
+            </div>
+            <div class="mt-1.5">
+                <a class="font-semibold mx-2 w-4" href="#">Home</a>
+                <a class="font-semibold mx-2 w-4" href="#">Products</a>
+                <a class="font-semibold mx-2 w-4" href="#">About Us</a>
+                <a class="font-semibold mx-2 w-4" href="#">Contact US</a>
+            </div>
+        </nav>
+        <section class="container sm:flex md:flex-row p-5 justify-center align-middle mx-auto">
+            <div class="basis-1/2">
+                <h1 class="uppercase w-96 text-4xl md:text-6xl lg:text-7xl font-semibold mx-3"><span
+                        class="text-price">be the
+                        penguin</span>
+                    <span class="text-title">of winter</span>
+                </h1>
+                <p class="text-description text-base my-7 font-medium mx-3">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+                <button
+                    class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                    <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                    buy now
+                </button>
+            </div>
+            <div class="basis-1/2">
+                <img src="images/model.png" alt="Model">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <h2 class="text-title text-5xl uppercase font-bold my-20">women's jacket</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-between gap-16">
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-1.png" alt="Jacket-1">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Yellow Coat Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-2.png" alt="Jacket-2">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Ladies Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-3.png" alt="Jacket-3">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Women's Leather Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <h2 class="text-title text-5xl uppercase font-bold my-20">men's jacket</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-between gap-16">
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-4.png" alt="Jacket-4">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Men's Snowboard Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-5.png" alt="Jacket-5">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Men's Leather Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <div class="bg-imgBg rounded-3xl">
+                        <img class="p-10" src="images/jacket-6.png" alt="Jacket-6">
+                    </div>
+                    <h3 class="text-title text-2xl font-bold mt-5">Men's Casual Jacket</h3>
+                    <p class="text-description font-medium text-base my-5">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and
+                        typesetting
+                        industry.</p>
+                    <div class="flex">
+                        <p class="text-price text-4xl font-black">$234</p>
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] mx-3 h-14 w-40 uppercase text-white rounded-lg">
+                            <img class="inline h-6 w-6" src="icons/shopping-cart 1.png" alt="Shopping Cart Icon">
+                            buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-10 justify-center align-middle mt-16">
+            <div>
+                <div>
+                    <div>
+                        <img class="h-20 w-20" src="images/house.png" alt="House">
+                    </div>
+                    <div>
+                        <h3 class="text-title text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p class="text-description font-normal text-base">Everybody is different, which is why we offer
+                            styles for every body.</p>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <div>
+                        <img class="h-20 w-20" src="images/box.png" alt="Box">
+                    </div>
+                    <div>
+                        <h3 class="text-title text-2xl font-bold">Free Exchanges</h3>
+                        <p class="text-description font-normal text-base">One of the many reasons you can shop with
+                            peace of mind.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="h-20 w-20" src="images/question.png" alt="Question">
+                    </div>
+                    <div>
+                        <h3 class="text-title text-2xl font-bold">Contact Our Seller</h3>
+                        <p class="text-description font-normal text-base">They are here to help you. That's quite
+                            literally what we pay them
+                            for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <img src="images/shopping.png" alt="Shopping">
+            </div>
+        </section>
+    </main>
+    <footer class="text-description text-center mt-5">
+        © 2023, Penguin Fashion, All rights reserved.
+    </footer>
+</body>
+
+</html>
